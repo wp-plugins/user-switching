@@ -24,15 +24,17 @@ This plugin allows you to quickly swap between user accounts in WordPress at the
 = Security =
 
  * Only users with the ability to edit other users can switch user accounts (by default this is only Administrators on single site installs, and Super Admins on Multisite installs). Lower level users cannot switch accounts.
+ * Passwords are not (and cannot be) revealed.
  * User switching is protected with WordPress' nonce security system, meaning only those who intend to switch users can switch.
  * Full support for administration over SSL (if applicable).
- * Passwords are not (and cannot be) revealed.
 
 = Usage =
 
-Visit the *Users* menu in WordPress and you'll see a *Switch To* link next to each user. Clicking this will immediately switch you into that user account. Once switched, you can switch back to your originating account via the *Switch back* link on each dashboard screen and in your profile menu in the WordPress toolbar.
+ 1. Visit the *Users* menu in WordPress and you'll see a *Switch To* link next to each user.
+ 2. Click this and you will immediately switch into that user account.
+ 3. You can switch back to your originating account via the *Switch back* link on each dashboard screen and in your profile menu in the WordPress toolbar.
 
-See the FAQ for information about the *Switch Off* feature.
+See the [FAQ](http://wordpress.org/plugins/user-switching/faq/) for information about the *Switch Off* feature.
 
 = Translations Included =
 
@@ -103,17 +105,16 @@ When a user switches off, the `switch_off_user` hook is called with the old user
 == Upgrade Notice ==
 
 = 0.8.3 =
-* Switch to storing data in cookies as JSON instead of PHP-serialized.
 * Show admin notices on all possible admin screens.
 * Tweak the redirect location for BuddyPress user profiles.
 
 == Changelog ==
 
 = 0.8.3 =
-* Switch to storing data in cookies as JSON instead of PHP-serialized.
 * Show admin notices on all possible admin screens.
 * Tweak the redirect location for BuddyPress user profiles.
 * Change the textdomain in the plugin to match the plugin slug (required for language packs in WordPress core).
+* Switch to storing data in cookies as JSON instead of PHP-serialized.
 
 = 0.8.2 =
 * Russian translation by R J
