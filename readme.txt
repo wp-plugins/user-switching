@@ -28,6 +28,12 @@ This plugin allows you to quickly swap between user accounts in WordPress at the
  * Full support for administration over SSL (if applicable).
  * Passwords are not (and cannot be) revealed.
 
+= Usage =
+
+Visit the *Users* menu in WordPress and you'll see a *Switch To* link next to each user. Clicking this will immediately switch you into that user account. Once switched, you can switch back to your originating account via the *Switch back* link on each dashboard screen and in your profile menu in the WordPress toolbar.
+
+See the FAQ for information about the *Switch Off* feature.
+
 = Translations Included =
 
  * Arabic by Hassan Hisham
@@ -52,12 +58,6 @@ You can install this plugin directly from your WordPress dashboard:
 Alternatively, if you have the [WordPress Developer plugin](http://wordpress.org/plugins/developer/) installed then User Switching is a one-click install from the Tools -> Developer screen.
 
 Failing that, see the guide to [Manually Installing Plugins](http://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation).
-
-= Usage =
-
-Visit the *Users* menu in WordPress and you'll see a *Switch To* link next to each user. Clicking this will immediately switch you into that user account. Once switched, you can switch back to your originating account via the *Switch back* link on each dashboard screen and in your profile menu in the WordPress toolbar.
-
-See the FAQ for information about the *Switch Off* feature.
 
 == Frequently Asked Questions ==
 
