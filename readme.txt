@@ -1,5 +1,3 @@
-[![Build Status](https://secure.travis-ci.org/johnbillion/user-switching.png)](http://travis-ci.org/johnbillion/user-switching)
-
 === User Switching ===
 
 Contributors: johnbillion  
@@ -200,3 +198,4 @@ When a user switches off, the `switch_off_user` hook is called with the old user
 
 = 0.1 =
 * Initial release.
+
