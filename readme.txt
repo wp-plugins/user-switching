@@ -99,8 +99,8 @@ When a user switches off, the `switch_off_user` hook is called with the old user
 
 == Screenshots ==
 
-1. The *Switch To* link on the Users screen
-2. The *Switch To* link on a user's profile
+1. ![The *Switch To* link on the Users screen](https://raw.github.com/johnbillion/user-switching/master/assets-wp-repo/screenshot-1.png)
+2. ![The *Switch To* link on a user's profile](https://raw.github.com/johnbillion/user-switching/master/assets-wp-repo/screenshot-2.png)
 
 == Upgrade Notice ==
 
