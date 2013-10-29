@@ -1,17 +1,19 @@
+[![Build Status](https://secure.travis-ci.org/johnbillion/user-switching.png)](http://travis-ci.org/johnbillion/user-switching)
+
 === User Switching ===
-Contributors: johnbillion
-Donate link: http://lud.icro.us/donations/
-Tags: user, users, profiles, switching, wpmu, multisite, buddypress, become, user control, user management, user access, developer
-Requires at least: 3.1
-Tested up to: 3.6
-Stable tag: trunk
-License: GPL v2 or later
+
+Contributors: johnbillion  
+Tags: user, users, profiles, switching, wpmu, multisite, buddypress, become, user control, user management, user access, developer  
+Requires at least: 3.1  
+Tested up to: 3.7  
+Stable tag: 0.8.3  
+License: GPL v2 or later  
 
 Instant switching between user accounts in WordPress.
 
 == Description ==
 
-This plugin allows you to quickly swap between user accounts in WordPress at the click of a button. You'll be instantly logged out and logged in as your desired user. This is handy for test environments where you regularly log out and in between different accounts, or for adminstrators of sites who need to switch between multiple accounts.
+This plugin allows you to quickly swap between user accounts in WordPress at the click of a button. You'll be instantly logged out and logged in as your desired user. This is handy for test environments where you regularly log out and in between different accounts, or for site adminstrators who need to switch between multiple accounts.
 
 = Features =
 
@@ -49,7 +51,9 @@ You can install this plugin directly from your WordPress dashboard:
  3. Click *Install Now* next to the User Switching plugin.
  4. Activate the plugin.
 
-Alternatively, see the guide to [Manually Installing Plugins](http://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation).
+Alternatively, if you have the [WordPress Developer plugin](http://wordpress.org/plugins/developer/) installed then User Switching is a one-click install from the Tools -> Developer screen.
+
+Failing that, see the guide to [Manually Installing Plugins](http://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation).
 
 = Usage =
 
@@ -89,7 +93,7 @@ No. This can be enabled though by installing the [User Switching for Regular Adm
 
 Yes. When a user switches to another account, the `switch_to_user` hook is called with the new and old user IDs passed as parameters.
 
-When a user switches back to their original account, the `switch_back_user` hook is called with the new (original) and old user IDs passed as parameters.
+When a user switches back to their original account, the `switch_back_user` hook is called with the new (original) and old user IDs passed as parameters. Note that the old user ID can be boolean false if the user is switching back after they've been switched off.
 
 When a user switches off, the `switch_off_user` hook is called with the old user ID as a parameter.
 
@@ -100,16 +104,18 @@ When a user switches off, the `switch_off_user` hook is called with the old user
 
 == Upgrade Notice ==
 
-= 0.8.2 =
-* Russian translation by R J
-
-= 0.8.1 =
-* Japanese translation by Yusuke Hayasaki
-
-= 0.8 =
-* Nested switching and switching back is now supported (capability permitting). Switch, switch again, switch back, switch back!
+= 0.8.3 =
+* Switch to storing data in cookies as JSON instead of PHP-serialized.
+* Show admin notices on all possible admin screens.
+* Tweak the redirect location for BuddyPress user profiles.
 
 == Changelog ==
+
+= 0.8.3 =
+* Switch to storing data in cookies as JSON instead of PHP-serialized.
+* Show admin notices on all possible admin screens.
+* Tweak the redirect location for BuddyPress user profiles.
+* Change the textdomain in the plugin to match the plugin slug (required for language packs in WordPress core).
 
 = 0.8.2 =
 * Russian translation by R J
