@@ -109,13 +109,13 @@ When a user switches off, the `switch_off_user` hook is called with the old user
 
 = 0.8.8 =
 * Spanish Translation by Marcelo Pedra.
-* User Switching is now a network-only plugin.
+* User Switching is now a network-only plugin when used on Multisite.
 
 == Changelog ==
 
 = 0.8.8 =
 * Spanish Translation by Marcelo Pedra.
-* User Switching is now a network-only plugin.
+* User Switching is now a network-only plugin when used on Multisite.
 
 = 0.8.7 =
 * Respect the `secure_logged_in_cookie` and `login_redirect` filters.
