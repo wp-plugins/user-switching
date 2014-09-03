@@ -4,7 +4,7 @@ Contributors: johnbillion
 Tags: users, profiles, user switching, fast user switching, multisite, buddypress, bbpress, become, user management, developer  
 Requires at least: 3.1  
 Tested up to: 4.0  
-Stable tag: 1.0  
+Stable tag: 1.0.1  
 License: GPL v2 or later  
 
 Instant switching between user accounts in WordPress.
@@ -76,7 +76,7 @@ Alternatively, you can install this plugin directly from your WordPress dashboar
 
 = What does "Switch off" mean? =
 
-Switching off logs you out of your account but retains your user ID in an authorisation cookie so you can switch straight back without having to log in again manually. It's akin to switching to no user, and being able to switch back.
+Switching off logs you out of your account but retains your user ID in an authentication cookie so you can switch straight back without having to log in again manually. It's akin to switching to no user, and being able to switch back.
 
 The *Switch Off* link can be found in your profile menu in the WordPress toolbar. Once you've switched off you'll see a *Switch back* link in the footer of your site.
 
@@ -114,11 +114,21 @@ When a user switches off, the `switch_off_user` hook is called with the old user
 
 == Upgrade Notice ==
 
+= 1.0.1 =
+
+* Shorten the names of User Switching's cookies to avoid problems with Suhosin's over-zealous default rules.
+* Add backwards compatibility for the deprecated `OLDUSER_COOKIE` constant.
+
 = 1.0 =
 
 * Security hardening for sites that use HTTPS in the admin area and HTTP on the front end.
 
 == Changelog ==
+
+= 1.0.1 =
+
+* Shorten the names of User Switching's cookies to avoid problems with Suhosin's over-zealous default rules.
+* Add backwards compatibility for the deprecated `OLDUSER_COOKIE` constant.
 
 = 1.0 =
 

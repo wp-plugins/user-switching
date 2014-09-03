@@ -2,7 +2,7 @@
 /*
 Plugin Name: User Switching
 Description: Instant switching between user accounts in WordPress
-Version:     1.0
+Version:     1.0.1
 Plugin URI:  https://johnblackbourn.com/wordpress-plugin-user-switching/
 Author:      John Blackbourn
 Author URI:  https://johnblackbourn.com/
@@ -55,21 +55,31 @@ class user_switching {
 	}
 
 	/**
-	 * Define the names of our cookies. Uses WordPress' cookie hash for increased security.
+	 * Define the names of our cookies.
 	 */
 	public function action_plugins_loaded() {
 
 		// User Switching's auth_cookie
 		if ( !defined( 'USER_SWITCHING_COOKIE' ) ) {
-			define( 'USER_SWITCHING_COOKIE', 'wordpress_user_switching_' . COOKIEHASH );
+			define( 'USER_SWITCHING_COOKIE', 'wordpress_user_sw_' . COOKIEHASH );
 		}
+
 		// User Switching's secure_auth_cookie
 		if ( !defined( 'USER_SWITCHING_SECURE_COOKIE' ) ) {
-			define( 'USER_SWITCHING_SECURE_COOKIE', 'wordpress_user_switching_secure_' . COOKIEHASH );
+			define( 'USER_SWITCHING_SECURE_COOKIE', 'wordpress_user_sw_secure_' . COOKIEHASH );
 		}
+
 		// User Switching's logged_in_cookie
 		if ( !defined( 'USER_SWITCHING_OLDUSER_COOKIE' ) ) {
-			define( 'USER_SWITCHING_OLDUSER_COOKIE', 'wordpress_user_switching_olduser_' . COOKIEHASH );
+			if ( defined( 'OLDUSER_COOKIE' ) ) {
+				trigger_error( sprintf(
+					'The OLDUSER_COOKIE constant is deprecated. See <code>%s()</code>.',
+					__METHOD__
+				), ( WP_DEBUG ? E_USER_WARNING : E_USER_NOTICE ) );
+				define( 'USER_SWITCHING_OLDUSER_COOKIE', OLDUSER_COOKIE );
+			} else {
+				define( 'USER_SWITCHING_OLDUSER_COOKIE', 'wordpress_user_sw_olduser_' . COOKIEHASH );
+			}
 		}
 
 	}
