@@ -3,7 +3,7 @@
 Contributors: johnbillion  
 Tags: users, profiles, user switching, fast user switching, multisite, buddypress, bbpress, become, user management, developer  
 Requires at least: 3.1  
-Tested up to: 4.2.2  
+Tested up to: 4.3  
 Stable tag: 1.0.6  
 License: GPL v2 or later  
 
@@ -11,7 +11,7 @@ Instant switching between user accounts in WordPress.
 
 == Description ==
 
-This plugin allows you to quickly swap between user accounts in WordPress at the click of a button. You'll be instantly logged out and logged in as your desired user. This is handy for test environments where you regularly log out and in between different accounts, or for adminstrators who need to switch between multiple accounts.
+This plugin allows you to quickly swap between user accounts in WordPress at the click of a button. You'll be instantly logged out and logged in as your desired user. This is handy for test environments where you regularly log out and in between different accounts, or for administrators who need to switch between multiple accounts.
 
 = Features =
 
