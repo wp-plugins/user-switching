@@ -40,9 +40,12 @@ See the [FAQ](https://wordpress.org/plugins/user-switching/faq/) for information
 = Translations Included =
 
  * العربية (Arabic)
+ * Azərbaycan dili (Azerbaijani)
+ * Bosanski (Bosnian)
  * Български (Bulgarian)
  * 中文 (Chinese Simplified)
  * Hrvatski (Croatian)
+ * Dansk (Danish)
  * Nederlands (Dutch)
  * Suomi (Finnish)
  * Français (French)
@@ -63,7 +66,7 @@ See the [FAQ](https://wordpress.org/plugins/user-switching/faq/) for information
  * Español (Spanish)
  * Türkçe (Turkish)
 
-Thanks to translations by Hassan Hisham, Tunghsiao Liu, Francois-Xavier Bénard, Ralph Stenzel, Rami Y, Yusuke Hayasaki, Tommixoft, Amin Ab, Bartosz Arendt, Raphael Mendonça, R J, Max Samael, Eko Ikhyar, Marcelo Pedra, Abdullah Pazarbasi, ArianServ, SilverXp, Evi Giannakou, Petya Raykovska, Martin Sauter, Yaser Tallo, Enrique Errando, Sami Keijonen, Kalina Michocka, Alessandro Curci, Alessandro Tesoro, Ante Sepic, and Per Søderlind!
+Thanks to translations by Hassan Hisham, Tunghsiao Liu, Francois-Xavier Bénard, Ralph Stenzel, Rami Y, Yusuke Hayasaki, Tommixoft, Amin Ab, Bartosz Arendt, Raphael Mendonça, R J, Max Samael, Eko Ikhyar, Marcelo Pedra, Abdullah Pazarbasi, ArianServ, SilverXp, Evi Giannakou, Petya Raykovska, Martin Sauter, Yaser Tallo, Enrique Errando, Sami Keijonen, Kalina Michocka, Alessandro Curci, Alessandro Tesoro, Ante Sepic, Per Søderlind, Mushviq Abdulla, Kenan Dervisevic, and Joachim Jensen!
 
 == Screenshots ==
 
@@ -133,13 +136,15 @@ See the plugin source code for complete hook documentation.
 
 = 1.0.7 =
 
+* Azerbaijani, Danish, and Bosnian translations.
 * Add back the 'User Switching' heading on the user profile screen, and correct the values passed to the `switch_back_user` hook when a user has been switched off.
 
 == Changelog ==
 
 = 1.0.7 =
 
-* Add back the 'User Switching' heading on the user profile screen which was accidentally removed in 7cd5dd8.
+* Azerbaijani, Danish, and Bosnian translations.
+* Add back the 'User Switching' heading on the user profile screen.
 * Correct the value passed to the `$old_user_id` parameter of the `switch_back_user` hook when a user has been switched off. This should be boolean `false` rather than `0`.
 * Docblocks for actions and filters.
 * More code standards tweaks.
